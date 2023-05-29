@@ -35,7 +35,9 @@ img{
     flex-wrap: wrap;
 }
 .my_paragraph{
-    font-size: 14px;
+    font-size: 12px;
 }
-    
+.font{
+    font-size: 8px;
+}
 

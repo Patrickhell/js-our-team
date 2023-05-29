@@ -68,19 +68,21 @@ for (let i = 0 ; i < teamList.length; i ++){
     ulElement.innerHTML += "<li>" +  memberProfile.firstName + '&nbsp;' + '&nbsp;' + '&nbsp;' +  '&nbsp;' +  memberProfile.position + '&nbsp;' + '&nbsp;' + '&nbsp;' +  '&nbsp;' +  '&nbsp;' +  '&nbsp;' + memberProfile.image + "</li>";
    
 }
-const boxImages = document.querySelector(".images");
+const boxImages = document.querySelector("div.images");
 const imageList = [ "wayne-barnett-founder-ceo.jpg", "angela-caroll-chief-editor.jpg", "walter-gordon-office-manager.jpg","angela-lopez-social-media-manager.jpg","scott-estrada-developer.jpg", "barbara-ramos-graphic-designer.jpg"];
 const nameList = ["Wayne Barnett", "Angela Caroll ", "Walter Gordon", "Angela Lopez ", "Scott Estrada", "Barbara Ramos"];
-const names = document.querySelector(".names");
+const names = document.querySelector("div.names");
 const positionList = ["Founder & CEO "," Chief Editor"," Office Manager", " Social Media  ", "Developer", "Graphic Designer",];
-const positons = document.querySelector(".positions");
+const positions = document.querySelector("div.positions");
 
-for (let i = 0 ; i < imageList.length &&i < nameList.length; i ++){
+for (let i = 0 ; i < imageList.length && i < nameList.length; i ++){
  boxImages.innerHTML += 
  `<div class="image-items">
         <img src="./img/${imageList[i]}">
-       &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;  ${nameList[i]} 
-       &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp  &nbsp;&nbsp; &nbsp; &nbsp  ${positionList[i]}
+     ${nameList[i]} <br>
+  ${positionList[i]}
+       
   </div>`;
   
+ 
 }
